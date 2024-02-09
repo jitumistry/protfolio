@@ -1,38 +1,284 @@
-.App {
-  text-align: center;
+.appclass {
+    height: 100vh;
+    background-color: #000;
+}
+.topbar {
+    background-color: #000;
+    color: #fff;
+}
+.topbar span, .topbar ul li a {
+    color: #fff !important;
+    font-weight: 500;
+}
+.topbar ul li {
+    display: inline;
+    list-style: none;
+}
+nav ul li a:hover {
+    color: #0ef;
+}
+a {
+    text-decoration: none !important;
+}
+.navlink {
+    font-weight: 500;
+}
+.topbar i{
+    color: #fff;
+}
+.homepage {
+    background-color: #000;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#root > div > div.homepage > div > div {
+    background-color: #000;
+}
+#root > div > div.homepage > div > div > div:nth-child(1) {
+    margin-top: 100px;
+}
+.social {
+    margin-left: -85px;
+    margin-top: 26px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.about h1, .about h3, .service h1, .project h1, .skillPage h1 {
+    text-align: center;
+}
+.btn-c {
+    background: #0ef !important;
+    color: black !important;
+}
+.btn-c span{
+    font-weight: 700;
+}
+.btn-c:hover {
+    box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50px cyan, 0 0 100px cyan, 0 0 200px cyan;
+    background: #0ef;
+    color: black;
+}
+.social li a {
+    border: 3px solid #0ef;
+    border-radius: 50%;
+    padding: 6px 10px;
+}
+.social li a:hover {
+    background: #0ef;
+    color: black;
+    box-shadow: 0 0 20px #0ef;
+}
+.social li a, .homepage h4 span, .service h1 span, .form h1 span, .project h1 span, .about span, .service span i, .skillPage h1 span {
+    color: #0ef;
+}
+.social li {
+    margin-left: 50px;
+    float: left;
+    list-style: none;
+    display: inline;
+    font-weight: 500;
+}
+/* about */
+#root > div > div.about > div > div > div:nth-child(2) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.topbar button span {
+    color: white;
+}
+.about, .service, .form, .skillPage {
+    background-color: #000;
+    color: #fff;
+}
+
+.about p {
+    line-height: 30px;
+    font-weight: 500;
+}
+.service h1 {
+    margin-bottom: 20px;
+}
+.card {
+    margin: 20% 10px;
+    border: 1px solid black;
+    background-color: black;
+    color: #fff;
+}
+.card-body h4, .service h1 {
+    margin-top: 22px;
+}
+
+/* contact form  */
+.form input, .form textarea, .form button {
+    margin-top: 30px;
+}
+.contact p a {
+    text-decoration: none;
+    color: #fff;
+}
+.contact {
+    padding: 180px 0px 0px 0px;
+}
+.c:hover{
+    color: #0ef;
+}
+.contact-1 {
+    padding-top: 100px;
+}
+#root > div > div.form > div > div {
+    background-color: #000;
+}
+
+/* project form  */
+.project {
+    background-color: #000;
+    color: white;
+    height: 91vh;
+}
+.project h1 {
+    margin-bottom: 50px;
+}
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+.text-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    color: #000;
+    font-weight: 500;
+    font-size: 30px;
+    text-shadow: 3px 0px 7px #0ef, -3px 0px 7px #0ef, 0px 4px 7px #0ef;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  .image-container:hover .text-container {
+    opacity: 1;
   }
-  to {
-    transform: rotate(360deg);
-  }
+#root > div > div.project > div {
+    background-color: #000;
 }
+.project img {
+    padding: 10px;
+}
+
+/* skill page  */
+.skillPage h1 {
+    margin: 12px 0;
+}
+.skillPage {
+    height: 90vh;
+}
+#root > div > div.skillPage > div > div > div:nth-child(2) > div {
+    margin: 30px 0 0 50px;
+}
+#root > div > div.skillPage > div {
+    background-color: #000;
+}
+.go {
+    padding: 0 50px 0;
+}
+
+
+
+
+@media (max-width: 790px) {
+    .homepage, .form, .project {
+        padding-top: 30px;
+        text-align: center;
+    }
+    #root > div > div.homepage > div > div > div:nth-child(1) {
+        margin-top: 0;
+    }
+    .project a img {
+        margin-top: 20px;
+    }
+    .homepage h1 {
+        font-size: 40px;
+    }
+    .social {
+        margin-left: 0px;
+    }
+    .social li {
+        margin-left: 31px;
+    }
+    .socialfix {
+        display: flex;
+        justify-content: center;
+    }
+    .socialfix ul {
+        padding: 0;
+    }
+    .contact {
+        padding: 0px;
+    }
+    .contact-1 {
+        padding-top: 0px;
+    }
+    .card {
+        margin-top: 0;
+    }
+    .homepage img {
+        height: 300px;
+    }
+    #root > div > div.about > div > div > div:nth-child(2) > img {
+        display: none;
+    }
+    #root > div > div.skillPage > div > div > div:nth-child(2) > div {
+        margin: 0 0 0 10px;
+    }
+    #root > div > div.homepage > div > div > div:nth-child(1) > div.socialfix > ul > li:nth-child(1) {
+        margin-left: 0;
+    }
+    #root > div > div.form > div > div > div.col-md-6.contact > div > ul > li:nth-child(1) {
+        margin-left: 0;
+    }
+}
+@media (min-width: 790px) {
+    nav ul li {
+        margin-right: 30px;
+    }
+}
+
+
+/* 
+<nav className="navbar navbar-expand-sm justify-content-between">
+
+                <NavLink className="navbar-brand" to="/">Protfolio.</NavLink>
+                <div className='mainnav'>
+                  <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span className="navbar-toggler-icon"></span>
+                  </button>
+
+                  <div className="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li className="nav-item mx-3">
+                        <NavLink to="/">Home</NavLink>
+                      </li>
+                      <li className="nav-item mx-3">
+                        <NavLink to="/about">About</NavLink>
+                      </li>
+                      <li className="nav-item mx-3">
+                        <NavLink to="/Services">Services</NavLink>
+                      </li>
+                      <li className="nav-item mx-3">
+                        <NavLink to="/Skills">Skill</NavLink>
+                      </li>
+                      <li className="nav-item mx-3">
+                        <NavLink to="/Project">Project</NavLink>
+                      </li>
+                      <li className="nav-item mx-3">
+                        <NavLink to="/Contact">Contact</NavLink>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+              </nav>
+*/
