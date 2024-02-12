@@ -17,7 +17,7 @@ const Projects = () => {
             </div>
           </div>
           <div className='col-md-4 image-container'>
-            <NavLink to={'https://emsproject.netlify.app/'}><img src={ems} alt='ems' className='img-fluid' /></NavLink>
+            <NavLink to={'https://github.com/jitumistry/EMS-Frontend'}><img src={ems} alt='ems' className='img-fluid' /></NavLink>
             <div className="text-container">
               <p className="text">Employee Management System</p>
             </div>

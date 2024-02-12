@@ -3,6 +3,9 @@ import { NavLink } from 'react-router-dom';
 import logo from './Images/myphoto.png';
 
 const Home = () => {
+  const handeler = () => {
+    window.location.href = 'https://drive.google.com/file/d/1iD9xvT81r5A3-I-OLZecflsmnpEkwifp/view'
+  }
   return (
     <>
       <div className='homepage'>
@@ -14,7 +17,7 @@ const Home = () => {
               <h1>Jitu Mistry</h1>
               <h4>And I'm a <span>Full Stack Developer</span></h4>
               <p>Passionate MERN Stack Developer | HTML, CSS, JavaScript, React, MongoDB | Ready to Contribute to Opportunities | Quick Learner | Ready to Start Now</p>
-              <button className='btn btn-c rounded-5'><span>Download Resume</span></button>
+              <button className='btn btn-c rounded-5' onClick={handeler}><span>Download Resume</span></button>
               </div>
               <div className='socialfix'>
               <ul className='social'>
